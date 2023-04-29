@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.xmlreader.Controller">
+   <children>
+      <AnchorPane prefHeight="139.0" prefWidth="237.0" style="-fx-background-color: #ffff00;" />
+      <AnchorPane layoutX="237.0" prefHeight="147.0" prefWidth="230.0" style="-fx-background-color: #2e3348;">
+         <children>
+            <AnchorPane layoutX="107.0" prefHeight="205.0" prefWidth="115.0" style="-fx-background-color: #2e3348;">
+               <children>
+                  <Text fx:id="textRequirements" fill="#09e0a1" layoutX="-52.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Требования к doc" wrappingWidth="131.13671875">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="textResult" fill="#f20202" layoutX="-67.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Файл соответвует требованиям" wrappingWidth="149.0" />
+               </children>
+            </AnchorPane>
+            <TextField fx:id="textFont" layoutX="23.0" layoutY="57.0" />
+            <TextField fx:id="textFontSize" layoutX="25.0" layoutY="113.0" />
+            <Text fx:id="fontName" fill="#09e0a1" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название шрифта" />
+            <Text fx:id="fontSize" fill="#09e0a1" layoutX="25.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Размер шрифта" />
+         </children>
+      </AnchorPane>
+      <Text fx:id="textLoad" fill="#09e0a1" layoutX="62.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Загрузка файла" wrappingWidth="123.13671875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textFileName" layoutX="30.0" layoutY="61.0" prefHeight="25.0" prefWidth="123.0" />
+      <Button fx:id="buttonRevirw" layoutX="153.0" layoutY="61.0" mnemonicParsing="false" text="Обзор" />
+      <Button fx:id="buttonCheck" layoutX="80.0" layoutY="166.0" mnemonicParsing="false" text="Проверить" />
+   </children>
+</AnchorPane>
